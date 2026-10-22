@@ -1,4 +1,5 @@
 from analyzer import analyze_network
+from ping_parser import analyze_ping
 
 print("=== Network Troubleshooting Assistant ===")
 
@@ -17,5 +18,4 @@ while True:
 output = "\n".join(lines)
 
 print("\nAnalyzing network...\n")
-
-analyze_network(output)
+analyze_ping(output)

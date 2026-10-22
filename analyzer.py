@@ -25,6 +25,9 @@ def analyze_network(output):
         elif key == "default gateway":
             gateway = value
 
+    if not any([ip_address, subnet_mask, gateway]):
+        return
+
     print("IP Address:", ip_address)
     print("Subnet Mask:", subnet_mask)
     print("Gateway:", gateway)
